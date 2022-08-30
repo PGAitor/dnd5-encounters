@@ -2,4 +2,4 @@
 Fan made open source D&amp;D encounter creator.
 
 ## Contents
-Monster filter to select the ones you need at any time.
+v 0.1 - Monster filter to select the ones you need at any time.
