@@ -1,0 +1,79 @@
+:root {
+    /* Dimentions */
+    /* Content position */
+    /* Style */
+    --LIGHT: #fbf6e3;
+    --DARK: #050003;
+    --WHITE: #ffffff;
+    --PRIMARY: #d9e9d1;
+    --SECONDARY: #0d1a26;
+    --INFO: #768be5;
+    --ACCENT1: #c3d1bc;
+    --ACCENT2: #d9a995;
+    --ACCENT3: #ffe804;
+    --SUCCESS: #58ca7d;
+    --WARNING: #e3cc05;
+    --DANGER: #f21b02;
+}
+* {
+    /* Dimentions */
+    /* Content position */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* Style */
+}
+body {
+    /* Dimentions */
+    padding: 20px;
+    /* Content position */
+    display: flex;
+    flex-wrap: wrap;
+    /* Style */
+    background: var(--LIGHT);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+    /* Dimentions */
+    width: 100%;
+    /* Content position */
+    /* Style */
+}
+main {
+    /* Dimentions */
+    width: 100%;
+    /* Content position */
+    display: flex;
+    flex-wrap: wrap;
+    /* Style */
+}
+nav {
+    /* Dimentions */
+    width: 15%;
+    /* Content position */
+    padding: 10px;
+    /* Style */
+    background-color: var(--ACCENT2);
+    font-size: small;
+}
+nav div {
+    /* Dimentions */
+    /* Content position */
+    margin-bottom: 5px;
+    /* Style */
+}
+nav h3 {
+    /* Dimentions */
+    /* Content position */
+    margin-bottom: 10px;
+    /* Style */
+    text-align: center;
+    font-size: small;
+}
+footer {
+    /* Dimentions */
+    width: 100%;
+    /* Content position */
+    /* Style */
+}
+

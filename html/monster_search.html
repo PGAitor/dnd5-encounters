@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/results.css">
+        <title></title>
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+            <nav>
+                <!-- Aquí va el filtro de resultados -->
+                <h3>FILTRO DE MONSTRUOS</h3>
+                <div>
+                    <input type="checkbox" id="save" name="save">
+                    <label for="save">Guardar filtros</label>
+                </div>
+                <!-- Tipo de monstruo -->
+                <div class="dropdown">
+                    <button class="dropbtn">Tipo de monstruo</button>
+                    <div class="dropdown-content">
+                        <a href="#">monstruo1</a>
+                        <a href="#">monstruo2</a>
+                    </div>
+                    </select>
+                </div>
+                <!-- Entorno -->
+                <div class="dropdown">
+                    <button class="dropbtn">Entorno</button>
+                    <div class="dropdown-content">
+                        <a href="#">Tipo dragón</a>
+                        <a href="#">Tipo planta</a>
+                        <a href="#">Tipo zapato</a>
+                        <a href="#">Tipo agua</a>
+                        <a href="#">Tipo roca</a>
+                        <a href="#">Tipo vegano</a>
+                    </div>
+                    </select>
+                </div>
+                <!-- Fuente -->
+                <div class="dropdown">
+                    <button class="dropbtn">Fuente</button>
+                    <div class="dropdown-content">
+                        <a href="#">Libro básico</a>
+                        <a href="#">Manual de monstruos</a>
+                        <a href="#">Libro gordo de petete</a>
+                    </div>
+                    </select>
+                </div>
+                <!-- Alineamiento -->
+                <div class="dropdown">
+                    <button class="dropbtn">Alineamiento</button>
+                    <div class="dropdown-content">
+                        <a href="#">Legal malvado</a>
+                        <a href="#">De bueno, tonto</a>
+                    </div>
+                    </select>
+                </div>
+                <!-- Creación -->
+                <div class="dropdown">
+                    <button class="dropbtn">Creación</button>
+                    <div class="dropdown-content">
+                        <a href="#">Bichos oficiales</a>
+                        <a href="#">Me lo traigo de casa</a>
+                    </div>
+                    </select>
+                </div>
+                <div>Valor de desafio</div>
+                <div>Tamaño</div>
+                <div><input type="button" value="BORRAR FILTROS" class="button"></div>
+                <div><input type="button" value="OPCIONES AVANZADAS" class="button"></div>
+            </nav>
+            <!-- Aquí van los resultados de la búsqueda -->
+            <div class="main-listing">
+                <div class="listing-header-search">
+                    <div><input class="search-box" placeholder="Buscar" value=""></div>
+                    <div class="show-filters">
+                        <div clas="filter monster-type-filter">
+                            TIPO DE MONSTRUO: <div class="bubble">monstruo1</div>
+                        </div>
+                        <div clas="filter environment-filter">
+                            ENTORNO:
+                            <div class="bubble">Desierto</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing-body">
+                    <div class="listing-results-header">
+                        <div class="monster-cell-avatar"></div>
+                        <div class="monster-cell monster-cell-name">Nombre</div>
+                        <div class="monster-cell monster-cell-type">Tipo</div>
+                        <div class="monster-cell monster-cell-size">Tamaño</div>
+                        <div class="monster-cell monster-cell-cr">ND</div>
+                        <div class="monster-cell monster-cell-difficulty">Dificultad</div>
+                        <div class="monster-cell monster-cell-add-button"></div>
+                        <div class="monster-cell monster-cell-expand-button"></div>
+                    </div>
+                    <div class="result">
+                        <div class="monster-line">
+                            <div class="monster-cell-avatar"><img src="img/dragon.svg" alt="Pink dragon" class="avatar"></div>
+                            <div class="monster-cell monster-cell-name">Marmota asesina</div>
+                            <div class="monster-cell monster-cell-type">Bestia</div>
+                            <div class="monster-cell monster-cell-size">Pequeño</div>
+                            <div class="monster-cell monster-cell-cr">0.5</div>
+                            <div class="monster-cell monster-cell-difficulty">Baja</div>
+                            <div class="monster-cell monster-cell-add-button"><button class="monster-button"><div class="">ponlo</div></button></div>
+                            <div class="monster-cell monster-cell-expand-button"><button class="updown-button"><div class="">ficha</div></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
