@@ -1,0 +1,10 @@
+.npcsheet {
+    /* Dimentions */
+    display: block;
+    width: 100%;
+    height: 200px;
+    /* Content position */
+    /* Style */
+    background-color: var(--ACCENT3);
+    border: 1px solid var(--DARK);
+}

@@ -1,0 +1,136 @@
+
+.filter-navigation {
+    /* Dimentions */
+    width: 15%;
+    /* Content position */
+    padding: 10px;
+    /* Style */
+    background-color: var(--INFO);
+    font-size: small;
+}
+.filter-navigation div {
+    /* Dimentions */
+    /* Content position */
+    margin-bottom: 5px;
+    /* Style */
+}
+.filter-navigation h3 {
+    /* Dimentions */
+    /* Content position */
+    margin-bottom: 10px;
+    /* Style */
+    text-align: center;
+    font-size: small;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    /* Dimentions */
+    /* Content position */
+    position: relative;
+    /* Style */
+}
+/* Style The Dropdown Button */
+.dropbtn {
+    /* Dimentions */
+    width: 100%;
+    /* Content position */
+    padding: 8px;
+    /* Style */
+    background-color: var(--PRIMARY);
+    color: var(--DARK);
+    border: 1px solid var(--DARK);
+    cursor: pointer;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    /* Dimentions */
+    width: 100%;
+    min-width: 160px;
+    /* Content position */
+    z-index: 1;
+    display: none;
+    position: absolute;
+    /* Style */
+    background-color: var(--PRIMARY);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    /* Dimentions */
+    /* Content position */
+    padding: 12px 16px;
+    display: block;
+    /* Style */
+    color: var(--DARK);
+    text-decoration: none;
+}  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    /* Dimentions */
+    /* Content position */
+    /* Style */
+    background-color: var(--ACCENT1)
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover, .dropbtn:hover, .dropbtn:focus {
+    /* Dimentions */
+    /* Content position */
+    /* Style */
+    background-color: var(--ACCENT3);
+}
+.slide-contaner {
+    /* Dimentions */
+    width: 100%;
+}
+.slider {
+    /* Dimentions */
+    width: 100%;
+    height: 5px;
+    /* Content position */
+    /* Style */
+    border-radius: 5px;
+    appearance: none;
+    background: var(--ACCENT1);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider:hover {
+    /* Style */
+    opacity: 1;
+}
+/* Chrome, Opera, Safari, Edge */
+.slider::-webkit-slider-thumb {
+    /* Dimentions */
+    width: 13px; /* Set a specific slider handle width */
+    height: 13px; /* Slider handle height */
+    /* Style */
+    border-radius: 50%;
+    appearance: none;
+    background: var(--ACCENT3); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+/* Firefox */
+.slider::-moz-range-thumb {
+    /* Dimentions */
+    width: 13px; /* Set a specific slider handle width */
+    height: 13px; /* Slider handle height */
+    /* Style */
+    border-radius: 50%;
+    background: var(--ACCENT3); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+.button {
+    /* Dimentions */
+    width: 100%;
+    /* Content position */
+    padding: 12px 0px;
+    /* Style */
+    font-size: small;
+    background: var(--ACCENT1);
+    border: 1px solid var(--DARK);
+    border-radius: 3px;
+    color: var(--DARK)!important;
+}
+.show {display: block;}

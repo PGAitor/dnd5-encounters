@@ -5,7 +5,7 @@
 .main-listing {
     /* Dimentions */
     width: 85%;
-    font-size: 16px;
+    font-size: small;
     /* Content position */
     display: block;
     padding: 15px;
@@ -23,7 +23,7 @@
     height: 25px;
     width: 300px;
     /* Content position */
-    padding-left: 5px;
+    padding-left: 10px;
     /* Style */
     font-size: small;
 }
@@ -31,16 +31,36 @@
     /* Dimentions */
     width: 100%;
     /* Content position */
-    flex-wrap: wrap;
     display: flex;
-    flex-grow: -1;
+    flex-wrap: wrap;
+    padding: 10px 0px;
     /* Style */
 }
 .filter {
     /* Dimentions */
     /* Content position */
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
     /* Style */
+    background-color: var(--WHITE);
+    border-radius: 8px;
+}
+.label-filter {
+    /* Content position */
+    margin-right: 5px;
+    padding-right: 5px;
+}
+.bubble {
+    /* Dimentions */
+    /* Content position */
+    padding: 6px;
+    /* Style */
+    background-color: var(--SUCCESS);
+    border: 1px solid var(--DARK);
+    border-radius: 13px;
 }
 .listing-results-header {
     /* Dimentions */
@@ -127,10 +147,10 @@
     align-items: center;
     justify-content: center;
     /* Style */
-    background: var(--WHITE);
-    border: 1px solid var(--SECONDARY);
+    background: var(--ACCENT2);
+    border: 1px solid var(--DARK);
     border-radius: 3px;
-    color: var(--SECONDARY)!important;
+    color: var(--DARK)!important;
     cursor: pointer;
     display: inline-flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif!important;
@@ -146,10 +166,10 @@
     align-items: center;
     justify-content: center;
     /* Style */
-    background: var(--WHITE);
-    border: 1px solid var(--SECONDARY);
+    background: var(--ACCENT2);
+    border: 1px solid var(--DARK);
     border-radius: 3px;
-    color: var(--SECONDARY)!important;
+    color: var(--DARK)!important;
     cursor: pointer;
     display: inline-flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif!important;

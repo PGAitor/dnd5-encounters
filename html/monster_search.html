@@ -5,34 +5,35 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/filters.css">
         <link rel="stylesheet" href="css/results.css">
+        <link rel="stylesheet" href="css/npcsheet.css">
         <title></title>
     </head>
     <body>
         <header>
         </header>
         <main>
-            <nav>
-                <!-- Aquí va el filtro de resultados -->
+            <div class="filter-navigation">
+                <!-- Filters -->
                 <h3>FILTRO DE MONSTRUOS</h3>
                 <div>
                     <input type="checkbox" id="save" name="save">
                     <label for="save">Guardar filtros</label>
                 </div>
-                <!-- Tipo de monstruo -->
+                <!-- Type -->
                 <div class="dropdown">
-                    <button class="dropbtn">Tipo de monstruo</button>
-                    <div class="dropdown-content">
+                    <button onclick="dropdownMenu('monsterMenu')"" class="dropbtn">Tipo de monstruo</button>
+                    <div id="monsterMenu" class="dropdown-content">
                         <a href="#">monstruo1</a>
                         <a href="#">monstruo2</a>
                     </div>
                     </select>
                 </div>
-                <!-- Entorno -->
-                <div class="dropdown">
+                <!-- Environment -->
+                <div onclick="dropdownMenu('environmentMenu')" class="dropdown">
                     <button class="dropbtn">Entorno</button>
-                    <div class="dropdown-content">
+                    <div id="environmentMenu" class="dropdown-content">
                         <a href="#">Tipo dragón</a>
                         <a href="#">Tipo planta</a>
                         <a href="#">Tipo zapato</a>
@@ -42,52 +43,63 @@
                     </div>
                     </select>
                 </div>
-                <!-- Fuente -->
-                <div class="dropdown">
+                <!-- Source -->
+                <div onclick="dropdownMenu('sourceMenu')" class="dropdown">
                     <button class="dropbtn">Fuente</button>
-                    <div class="dropdown-content">
+                    <div id="sourceMenu" class="dropdown-content">
                         <a href="#">Libro básico</a>
                         <a href="#">Manual de monstruos</a>
                         <a href="#">Libro gordo de petete</a>
                     </div>
                     </select>
                 </div>
-                <!-- Alineamiento -->
-                <div class="dropdown">
+                <!-- Alingment -->
+                <div onclick="dropdownMenu('alignmentMenu')" class="dropdown">
                     <button class="dropbtn">Alineamiento</button>
-                    <div class="dropdown-content">
+                    <div id="alignmentMenu" class="dropdown-content">
                         <a href="#">Legal malvado</a>
                         <a href="#">De bueno, tonto</a>
                     </div>
                     </select>
                 </div>
-                <!-- Creación -->
-                <div class="dropdown">
+                <!-- Homebrew -->
+                <div onclick="dropdownMenu('homebrewMenu')" class="dropdown">
                     <button class="dropbtn">Creación</button>
-                    <div class="dropdown-content">
+                    <div id="homebrewMenu" class="dropdown-content">
                         <a href="#">Bichos oficiales</a>
                         <a href="#">Me lo traigo de casa</a>
                     </div>
                     </select>
                 </div>
-                <div>Valor de desafio</div>
-                <div>Tamaño</div>
+                <div>
+                    <span>Valor de desafio</span>
+                    <div class="slide-container">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="crSlider">
+                    </div>
+                </div>
+                <div>
+                    <span>Tamaño</span>
+                    <div class="slide-container">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="sizeSlider">
+                    </div>
+                </div>
                 <div><input type="button" value="BORRAR FILTROS" class="button"></div>
                 <div><input type="button" value="OPCIONES AVANZADAS" class="button"></div>
-            </nav>
-            <!-- Aquí van los resultados de la búsqueda -->
+            </div>
+            <!-- List the creatures -->
             <div class="main-listing">
                 <div class="listing-header-search">
-                    <div><input class="search-box" placeholder="Buscar" value=""></div>
-                    <div class="show-filters">
-                        <div clas="filter monster-type-filter">
-                            TIPO DE MONSTRUO: <div class="bubble">monstruo1</div>
+                    <input class="search-box" placeholder="Buscar" value="">
+                </div>
+                <div class="show-filters">
+                        <div class="filter">
+                            <span class="label-filter">TIPO DE MONSTRUO:</span>
+                            <div class="bubble">monstruo1</div>
                         </div>
-                        <div clas="filter environment-filter">
-                            ENTORNO:
+                        <div class="filter">
+                            <span class="label-filter">ENTORNO:</span>
                             <div class="bubble">Desierto</div>
                         </div>
-                    </div>
                 </div>
                 <div class="listing-body">
                     <div class="listing-results-header">
@@ -101,15 +113,18 @@
                         <div class="monster-cell monster-cell-expand-button"></div>
                     </div>
                     <div class="result">
-                        <div class="monster-line">
-                            <div class="monster-cell-avatar"><img src="img/dragon.svg" alt="Pink dragon" class="avatar"></div>
-                            <div class="monster-cell monster-cell-name">Marmota asesina</div>
-                            <div class="monster-cell monster-cell-type">Bestia</div>
-                            <div class="monster-cell monster-cell-size">Pequeño</div>
-                            <div class="monster-cell monster-cell-cr">0.5</div>
-                            <div class="monster-cell monster-cell-difficulty">Baja</div>
-                            <div class="monster-cell monster-cell-add-button"><button class="monster-button"><div class="">ponlo</div></button></div>
-                            <div class="monster-cell monster-cell-expand-button"><button class="updown-button"><div class="">ficha</div></button></div>
+                        <div>
+                            <div class="monster-line">
+                                <div class="monster-cell-avatar"><img src="img/dragon.svg" alt="Pink dragon" class="avatar"></div>
+                                <div class="monster-cell monster-cell-name">Marmota asesina</div>
+                                <div class="monster-cell monster-cell-type">Bestia</div>
+                                <div class="monster-cell monster-cell-size">Pequeño</div>
+                                <div class="monster-cell monster-cell-cr">0.5</div>
+                                <div class="monster-cell monster-cell-difficulty">Baja</div>
+                                <div class="monster-cell monster-cell-add-button"><button class="monster-button"><div class="">ponlo</div></button></div>
+                                <div class="monster-cell monster-cell-expand-button"><button class="updown-button"><div class="">ficha</div></button></div>
+                            </div>
+                            <div class="npcsheet"></div>
                         </div>
                     </div>
                 </div>
@@ -117,5 +132,26 @@
         </main>
         <footer>
         </footer>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function dropdownMenu(elementID) {
+              document.getElementById(elementID).classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
     </body>
 </html>

@@ -2,15 +2,16 @@
     /* Dimentions */
     /* Content position */
     /* Style */
-    --LIGHT: #fbf6e3;
-    --DARK: #050003;
     --WHITE: #ffffff;
-    --PRIMARY: #d9e9d1;
-    --SECONDARY: #0d1a26;
-    --INFO: #768be5;
-    --ACCENT1: #c3d1bc;
-    --ACCENT2: #d9a995;
-    --ACCENT3: #ffe804;
+    --LIGHT: #ddddf1;
+    --DARK: #1d0843;
+    --PRIMARY: #5098e8;
+    --SECONDARY: #e0fb71;
+    --INFO: #f5e4d1;
+    --ACCENT1: #2ddce0;
+    --ACCENT2: #b0e95c;
+    --ACCENT3: #e9ad62;
+    --ACCENT4: #f8acc8;
     --SUCCESS: #58ca7d;
     --WARNING: #e3cc05;
     --DANGER: #f21b02;
@@ -26,6 +27,7 @@
 body {
     /* Dimentions */
     padding: 20px;
+    max-width: 1200px;
     /* Content position */
     display: flex;
     flex-wrap: wrap;
@@ -46,29 +48,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     /* Style */
-}
-nav {
-    /* Dimentions */
-    width: 15%;
-    /* Content position */
-    padding: 10px;
-    /* Style */
-    background-color: var(--ACCENT2);
-    font-size: small;
-}
-nav div {
-    /* Dimentions */
-    /* Content position */
-    margin-bottom: 5px;
-    /* Style */
-}
-nav h3 {
-    /* Dimentions */
-    /* Content position */
-    margin-bottom: 10px;
-    /* Style */
-    text-align: center;
-    font-size: small;
 }
 footer {
     /* Dimentions */
