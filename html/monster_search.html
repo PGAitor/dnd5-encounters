@@ -62,15 +62,6 @@
                     </div>
                     </select>
                 </div>
-                <!-- Homebrew -->
-                <div onclick="dropdownMenu('homebrewMenu')" class="dropdown">
-                    <button class="dropbtn">Creación</button>
-                    <div id="homebrewMenu" class="dropdown-content">
-                        <a href="#">Bichos oficiales</a>
-                        <a href="#">Me lo traigo de casa</a>
-                    </div>
-                    </select>
-                </div>
                 <div>
                     <span>Valor de desafio</span>
                     <div class="slide-container">
@@ -84,7 +75,6 @@
                     </div>
                 </div>
                 <div><input type="button" value="BORRAR FILTROS" class="button"></div>
-                <div><input type="button" value="OPCIONES AVANZADAS" class="button"></div>
             </div>
             <!-- List the creatures -->
             <div class="main-listing">
@@ -133,25 +123,8 @@
         <footer>
         </footer>
         <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function dropdownMenu(elementID) {
-              document.getElementById(elementID).classList.toggle("show");
-            }
             
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
             </script>
+            <script type="text/javascript" src="js/monster_call.js"></script>
     </body>
 </html>
