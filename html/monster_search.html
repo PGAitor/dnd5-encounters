@@ -23,7 +23,7 @@
                 </div>
                 <!-- Type -->
                 <div class="dropdown">
-                    <button onclick="dropdownMenu('monsterMenu')"" class="dropbtn">Tipo de monstruo</button>
+                    <button onclick="dropdownMenu('monsterMenu')" class="dropbtn monsterMenu">Tipo de monstruo</button>
                     <div id="monsterMenu" class="dropdown-content">
                         <a href="#">monstruo1</a>
                         <a href="#">monstruo2</a>
@@ -31,8 +31,8 @@
                     </select>
                 </div>
                 <!-- Environment -->
-                <div onclick="dropdownMenu('environmentMenu')" class="dropdown">
-                    <button class="dropbtn">Entorno</button>
+                <div class="dropdown environmentMenu">
+                    <button onclick="dropdownMenu('environmentMenu')" class="dropbtn environmentMenu">Entorno</button>
                     <div id="environmentMenu" class="dropdown-content">
                         <a href="#">Tipo dragón</a>
                         <a href="#">Tipo planta</a>
@@ -44,8 +44,8 @@
                     </select>
                 </div>
                 <!-- Source -->
-                <div onclick="dropdownMenu('sourceMenu')" class="dropdown">
-                    <button class="dropbtn">Fuente</button>
+                <div class="dropdown">
+                    <button onclick="dropdownMenu('sourceMenu')" class="dropbtn sourceMenu">Fuente</button>
                     <div id="sourceMenu" class="dropdown-content">
                         <a href="#">Libro básico</a>
                         <a href="#">Manual de monstruos</a>
@@ -54,8 +54,8 @@
                     </select>
                 </div>
                 <!-- Alingment -->
-                <div onclick="dropdownMenu('alignmentMenu')" class="dropdown">
-                    <button class="dropbtn">Alineamiento</button>
+                <div class="dropdown">
+                    <button onclick="dropdownMenu('alignmentMenu')" class="dropbtn alignmentMenu">Alineamiento</button>
                     <div id="alignmentMenu" class="dropdown-content">
                         <a href="#">Legal malvado</a>
                         <a href="#">De bueno, tonto</a>
@@ -93,28 +93,16 @@
                 </div>
                 <div class="listing-body">
                     <div class="listing-results-header">
-                        <div class="monster-cell-avatar"></div>
+                        <div class="monster-cell monster-cell-avatar"></div>
                         <div class="monster-cell monster-cell-name">Nombre</div>
                         <div class="monster-cell monster-cell-type">Tipo</div>
                         <div class="monster-cell monster-cell-size">Tamaño</div>
                         <div class="monster-cell monster-cell-cr">ND</div>
-                        <div class="monster-cell monster-cell-difficulty">Dificultad</div>
                         <div class="monster-cell monster-cell-add-button"></div>
                         <div class="monster-cell monster-cell-expand-button"></div>
                     </div>
                     <div class="result">
-                        <div>
-                            <div class="monster-line">
-                                <div class="monster-cell-avatar"><img src="img/dragon.svg" alt="Pink dragon" class="avatar"></div>
-                                <div class="monster-cell monster-cell-name">Marmota asesina</div>
-                                <div class="monster-cell monster-cell-type">Bestia</div>
-                                <div class="monster-cell monster-cell-size">Pequeño</div>
-                                <div class="monster-cell monster-cell-cr">0.5</div>
-                                <div class="monster-cell monster-cell-difficulty">Baja</div>
-                                <div class="monster-cell monster-cell-add-button"><button class="monster-button"><div class="">ponlo</div></button></div>
-                                <div class="monster-cell monster-cell-expand-button"><button class="updown-button"><div class="">ficha</div></button></div>
-                            </div>
-                            <div class="npcsheet"></div>
+                        <div id="monsterResults">
                         </div>
                     </div>
                 </div>
@@ -128,3 +116,14 @@
             <script type="text/javascript" src="js/monster_call.js"></script>
     </body>
 </html>
+
+                            <!-- <div class="monster-line">
+                                <div class="monster-cell-avatar"><img src="img/dragon.svg" alt="Pink dragon" class="avatar"></div>
+                                <div class="monster-cell monster-cell-name">Marmota asesina</div>
+                                <div class="monster-cell monster-cell-type">Bestia</div>
+                                <div class="monster-cell monster-cell-size">Pequeño</div>
+                                <div class="monster-cell monster-cell-cr">0.5</div>
+                                <div class="monster-cell monster-cell-add-button"><button class="monster-button"><div class="">ponlo</div></button></div>
+                                <div onclick="showNPC('npcID')" class="monster-cell monster-cell-expand-button"><button class="updown-button"><div class="">ficha</div></button></div>
+                            </div>
+                            <div id="npcID" class="npcsheet"></div> -->

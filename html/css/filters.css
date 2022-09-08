@@ -1,11 +1,12 @@
 
 .filter-navigation {
     /* Dimentions */
-    width: 15%;
+    width: 20%;
+    max-width: 220px;
     /* Content position */
     padding: 10px;
     /* Style */
-    background-color: var(--INFO);
+    background-color: var(--WHITE);
     font-size: small;
 }
 .filter-navigation div {
@@ -36,9 +37,10 @@
     /* Content position */
     padding: 8px;
     /* Style */
-    background-color: var(--PRIMARY);
+    background-color: var(--WHITE);
     color: var(--DARK);
     border: 1px solid var(--DARK);
+    border-radius: 4px;
     cursor: pointer;
 }
 /* Dropdown Content (Hidden by Default) */
@@ -51,7 +53,7 @@
     display: none;
     position: absolute;
     /* Style */
-    background-color: var(--PRIMARY);
+    background-color: var(--WHITE);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 /* Links inside the dropdown */
@@ -69,14 +71,14 @@
     /* Dimentions */
     /* Content position */
     /* Style */
-    background-color: var(--ACCENT1)
+    background-color: var(--INFO)
 }
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover, .dropbtn:hover, .dropbtn:focus {
     /* Dimentions */
     /* Content position */
     /* Style */
-    background-color: var(--ACCENT3);
+    background-color: var(--INFO);
 }
 .slide-contaner {
     /* Dimentions */

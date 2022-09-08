@@ -3,13 +3,13 @@
     /* Content position */
     /* Style */
     --WHITE: #ffffff;
-    --LIGHT: #ddddf1;
+    --LIGHT: #dddde8;
     --DARK: #1d0843;
     --PRIMARY: #5098e8;
     --SECONDARY: #e0fb71;
     --INFO: #f5e4d1;
     --ACCENT1: #2ddce0;
-    --ACCENT2: #b0e95c;
+    --ACCENT2: #27c9cc;
     --ACCENT3: #e9ad62;
     --ACCENT4: #f8acc8;
     --SUCCESS: #58ca7d;
@@ -27,7 +27,7 @@
 body {
     /* Dimentions */
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1600px;
     /* Content position */
     display: flex;
     flex-wrap: wrap;

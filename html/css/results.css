@@ -4,7 +4,7 @@
 
 .main-listing {
     /* Dimentions */
-    width: 85%;
+    width: 80%;
     font-size: small;
     /* Content position */
     display: block;
@@ -58,7 +58,7 @@
     /* Content position */
     padding: 6px;
     /* Style */
-    background-color: var(--SUCCESS);
+    background-color: var(--ACCENT1);
     border: 1px solid var(--DARK);
     border-radius: 13px;
 }
@@ -89,7 +89,7 @@
     align-items: center;
     padding: 7px;
     /* Style */
-    background-color: var(--PRIMARY);
+    background-color: var(--WHITE);
     color: var(--DARK);
     border: 1px solid var(--DARK);;
     border-radius: 3px;
@@ -108,27 +108,35 @@
 }
 .monster-cell-type {
     /* Dimentions */
-    width: 10%;
+    width: 15%;
+    /* Content position */
+    text-align: center;
 }
 .monster-cell-size {
     /* Dimentions */
     width: 10%;
+    /* Content position */
+    text-align: center;
 }
 .monster-cell-cr {
     /* Dimentions */
-    width: 4%;
-}
-.monster-cell-difficulty {
-    /* Dimentions */
-    width: 10%;
+    width: 9%;
+    /* Content position */
+    text-align: center;
 }
 .monster-cell-add-button {
     /* Dimentions */
     width: 10%;
+    /* Content position */
+    display: flex;
+    justify-content: center;
 }
 .monster-cell-expand-button {
     /* Dimentions */
     width: 10%;
+    /* Content position */
+    display: flex;
+    justify-content: center;
 }
 .avatar {
     /* Dimentions */
@@ -147,7 +155,7 @@
     align-items: center;
     justify-content: center;
     /* Style */
-    background: var(--ACCENT2);
+    background: var(--ACCENT1);
     border: 1px solid var(--DARK);
     border-radius: 3px;
     color: var(--DARK)!important;
@@ -166,7 +174,7 @@
     align-items: center;
     justify-content: center;
     /* Style */
-    background: var(--ACCENT2);
+    background: var(--ACCENT1);
     border: 1px solid var(--DARK);
     border-radius: 3px;
     color: var(--DARK)!important;
@@ -178,4 +186,8 @@
     height: 40px;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.updown-button:hover, .monster-button:hover, .button:hover {
+    background-color: var(--ACCENT2);
 }

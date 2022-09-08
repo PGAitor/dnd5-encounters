@@ -1,10 +1,21 @@
 .npcsheet {
     /* Dimentions */
-    display: block;
+    display: none;
     width: 100%;
     height: 200px;
     /* Content position */
     /* Style */
-    background-color: var(--ACCENT3);
+    background-color: var(--WHITE);
     border: 1px solid var(--DARK);
+    border-top: 0;
+}
+
+.show-npc-sheet {
+    display: inline-block;
+}
+
+.npc-stats {
+    padding: 10px;
+    margin: 10px;
+    background-color: blue;
 }
