@@ -1,172 +1,32 @@
-<div class="npc-stats">
-    <div class="mon-stat-block__header">
-        <div class="mon-stat-block__name">${name}</div>
-        <div class="mon-stat-block__meta">${size-and-type}, ${align}</div>
-        <div class="mon-stat-block__separator"></div>
-    </div>
-    <div class="mon-stat-block__attributes">
-        <div class="mon-stat-block__attribute"><span class="mon-stat-block__attribute-label">Clase de Armadura</span> <span
-                class="mon-stat-block__attribute-value"><span class="mon-stat-block__attribute-data-value">${ac}</span>
-                <!-- <span class="mon-stat-block__attribute-data-extra">(natural armor) </span></span></div> -->
-        <div class="mon-stat-block__attribute"><span class="mon-stat-block__attribute-label">Puntos de golpe</span> <span
-                class="mon-stat-block__attribute-data"><span class="mon-stat-block__attribute-data-value">${hp}</span>
-                <span class="mon-stat-block__attribute-data-extra"><button aria-haspopup="menu"
-                        class="integrated-dice__container">(18d10 + 36)</button></span></span></div>
-        <div class="mon-stat-block__attribute"><span class="mon-stat-block__attribute-label">Speed</span> <span
-                class="mon-stat-block__attribute-data"><span class="mon-stat-block__attribute-data-value">10 ft., swim
-                    40 ft.</span></span></div>
-    </div>
-    <div class="mon-stat-block__stat-block">
-        <div class="mon-stat-block__separator"><img class="mon-stat-block__separator-img" alt=""
-                src="https://media-waterdeep.cursecdn.com/file-attachments/0/579/stat-block-header-bar.svg"></div>
-        <div class="ability-block">
-            <div class="ability-block__stat ability-block__stat--str">
-                <div class="ability-block__heading">STR</div>
-                <div class="ability-block__data"><span class="ability-block__score">21</span> <span
-                        class="ability-block__modifier"><button aria-haspopup="menu"
-                            class="integrated-dice__container">(+5)</button></span></div>
-            </div>
-            <div class="ability-block__stat ability-block__stat--dex">
-                <div class="ability-block__heading">DEX</div>
-                <div class="ability-block__data"><span class="ability-block__score">9</span> <span
-                        class="ability-block__modifier"><button aria-haspopup="menu"
-                            class="integrated-dice__container">(-1)</button></span></div>
-            </div>
-            <div class="ability-block__stat ability-block__stat--con">
-                <div class="ability-block__heading">CON</div>
-                <div class="ability-block__data"><span class="ability-block__score">15</span> <span
-                        class="ability-block__modifier"><button aria-haspopup="menu"
-                            class="integrated-dice__container">(+2)</button></span></div>
-            </div>
-            <div class="ability-block__stat ability-block__stat--int">
-                <div class="ability-block__heading">INT</div>
-                <div class="ability-block__data"><span class="ability-block__score">18</span> <span
-                        class="ability-block__modifier"><button aria-haspopup="menu"
-                            class="integrated-dice__container">(+4)</button></span></div>
-            </div>
-            <div class="ability-block__stat ability-block__stat--wis">
-                <div class="ability-block__heading">WIS</div>
-                <div class="ability-block__data"><span class="ability-block__score">15</span> <span
-                        class="ability-block__modifier"><button aria-haspopup="menu"
-                            class="integrated-dice__container">(+2)</button></span></div>
-            </div>
-            <div class="ability-block__stat ability-block__stat--cha">
-                <div class="ability-block__heading">CHA</div>
-                <div class="ability-block__data"><span class="ability-block__score">18</span> <span
-                        class="ability-block__modifier"><button aria-haspopup="menu"
-                            class="integrated-dice__container">(+4)</button></span></div>
-            </div>
-        </div>
-        <div class="mon-stat-block__separator"><img class="mon-stat-block__separator-img" alt=""
-                src="https://media-waterdeep.cursecdn.com/file-attachments/0/579/stat-block-header-bar.svg"></div>
-    </div>
-    <div class="mon-stat-block__tidbits">
-        <div class="mon-stat-block__tidbit"><span class="mon-stat-block__tidbit-label">Saving Throws</span> <span
-                class="mon-stat-block__tidbit-data">CON <button aria-haspopup="menu"
-                    class="integrated-dice__container">+6</button>, INT <button aria-haspopup="menu"
-                    class="integrated-dice__container">+8</button>, WIS <button aria-haspopup="menu"
-                    class="integrated-dice__container">+6</button></span></div>
-        <div class="mon-stat-block__tidbit"><span class="mon-stat-block__tidbit-label">Skills</span> <span
-                class="mon-stat-block__tidbit-data"><a class="tooltip-hover skill-tooltip"
-                    href="/compendium/rules/basic-rules/using-ability-scores#History" aria-haspopup="true"
-                    data-tooltip-href="/skills/7-tooltip" data-tooltip-json-href="/skills/7/tooltip-json">History</a>
-                <button aria-haspopup="menu" class="integrated-dice__container">+12</button>, <a
-                    class="tooltip-hover skill-tooltip"
-                    href="/compendium/rules/basic-rules/using-ability-scores#Perception" aria-haspopup="true"
-                    data-tooltip-href="/skills/14-tooltip"
-                    data-tooltip-json-href="/skills/14/tooltip-json">Perception</a> <button aria-haspopup="menu"
-                    class="integrated-dice__container">+10</button></span></div>
-        <div class="mon-stat-block__tidbit"><span class="mon-stat-block__tidbit-label">Senses</span> <span
-                class="mon-stat-block__tidbit-data"><a class="tooltip-hover sense-tooltip"
-                    href="/compendium/rules/basic-rules/monsters#Darkvision" aria-haspopup="true"
-                    data-tooltip-href="/senses/2-tooltip" data-tooltip-json-href="/senses/2/tooltip-json">Darkvision</a>
-                120 ft.</span></div>
-        <div class="mon-stat-block__tidbit"><span class="mon-stat-block__tidbit-label">Languages</span> <span
-                class="mon-stat-block__tidbit-data">Deep Speech, Telepathy 120 ft.</span></div>
-        <div class="mon-stat-block__tidbit-container">
-            <div class="mon-stat-block__tidbit"><span class="mon-stat-block__tidbit-label">Challenge</span> <span
-                    class="mon-stat-block__tidbit-data">10 (5900 XP)</span></div>
-            <div class="mon-stat-block__tidbit-spacer"></div>
-            <div class="mon-stat-block__tidbit"><span class="mon-stat-block__tidbit-label">Proficiency Bonus</span>
-                <span class="mon-stat-block__tidbit-data">+4</span></div>
-        </div>
-    </div>
-    <div class="mon-stat-block__separator"><img class="mon-stat-block__separator-img" alt=""
-            src="https://media-waterdeep.cursecdn.com/file-attachments/0/579/stat-block-header-bar.svg"></div>
-    <div class="mon-stat-block__description-blocks">
-        <div class="mon-stat-block__description-block">
-            <div class="mon-stat-block__description-block-content">
-                <p><em><strong>Amphibious.</strong></em> The aboleth can breathe air and water.</p>
-                <p><em><strong>Mucous Cloud.</strong></em> While underwater, the aboleth is surrounded by transformative
-                    mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 feet
-                    of it must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for
-                    <button aria-haspopup="menu" class="integrated-dice__container">1d4</button> hours. The diseased
-                    creature can breathe only underwater.</p>
-                <p><em><strong>Probing Telepathy.</strong></em> If a creature communicates telepathically with the
-                    aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature.</p>
-            </div>
-        </div>
-        <div class="mon-stat-block__description-block">
-            <div class="mon-stat-block__description-block-heading">Actions</div>
-            <div class="mon-stat-block__description-block-content">
-                <p><em><strong>Multiattack.</strong></em> The aboleth makes three tentacle attacks.</p>
-                <p><em><strong>Tentacle.</strong> Melee Weapon Attack:</em> <button aria-haspopup="menu"
-                        class="integrated-dice__container">+9</button> to hit, reach 10 ft., one target. <em>Hit:</em>
-                    12 <button aria-haspopup="menu" class="integrated-dice__container">(2d6 + 5)</button> bludgeoning
-                    damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become
-                    diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease.
-                    After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't
-                    regain hit points unless it is underwater, and the disease can be removed only by <a
-                        class="tooltip-hover spell-tooltip" href="/spells/heal" aria-haspopup="true"
-                        data-tooltip-href="/spells/2139-tooltip"
-                        data-tooltip-json-href="/spells/2139/tooltip-json">heal</a> or another disease-curing spell of
-                    6th level or higher. When the creature is outside a body of water, it takes 6 <button
-                        aria-haspopup="menu" class="integrated-dice__container">(1d12)</button> acid damage every 10
-                    minutes unless moisture is applied to the skin before 10 minutes have passed.</p>
-                <p><em><strong>Tail.</strong> Melee Weapon Attack:</em> <button aria-haspopup="menu"
-                        class="integrated-dice__container">+9</button> to hit, reach 10 ft. one target. <em>Hit:</em> 15
-                    <button aria-haspopup="menu" class="integrated-dice__container">(3d6 + 5)</button> bludgeoning
-                    damage.</p>
-                <p><em><strong>Enslave (3/Day).</strong></em> The aboleth targets one creature it can see within 30 feet
-                    of it. The target must succeed on a DC 14 Wisdom saving throw or be magically <a
-                        class="tooltip-hover condition-tooltip"
-                        href="/compendium/rules/basic-rules/appendix-a-conditions#Charmed" aria-haspopup="true"
-                        data-tooltip-href="/conditions/2-tooltip"
-                        data-tooltip-json-href="/conditions/2/tooltip-json">charmed</a> by the aboleth until the aboleth
-                    dies or until it is on a different plane of existence from the target. The <a
-                        class="tooltip-hover condition-tooltip"
-                        href="/compendium/rules/basic-rules/appendix-a-conditions#Charmed" aria-haspopup="true"
-                        data-tooltip-href="/conditions/2-tooltip"
-                        data-tooltip-json-href="/conditions/2/tooltip-json">charmed</a> target is under the aboleth's
-                    control and can't take reactions, and the aboleth and the target can communicate telepathically with
-                    each other over any distance.</p>
-                <p>Whenever the <a class="tooltip-hover condition-tooltip"
-                        href="/compendium/rules/basic-rules/appendix-a-conditions#Charmed" aria-haspopup="true"
-                        data-tooltip-href="/conditions/2-tooltip"
-                        data-tooltip-json-href="/conditions/2/tooltip-json">charmed</a> target takes damage, the target
-                    can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the
-                    target can also repeat the saving throw when it is at least 1 mile away from the aboleth.</p>
-            </div>
-        </div>
-        <div class="mon-stat-block__description-block">
-            <div class="mon-stat-block__description-block-heading">Legendary Actions</div>
-            <div class="mon-stat-block__description-block-content">
-                <p>The aboleth can take 3 legendary actions, choosing from the options below. Only one legendary action
-                    option can be used at a time and only at the end of another creature's turn. The aboleth regains
-                    spent legendary actions at the start of its turn.</p>
-                <p><strong>Detect.</strong> The aboleth makes a Wisdom (<a class="tooltip-hover skill-tooltip"
-                        href="/compendium/rules/basic-rules/using-ability-scores#Perception" aria-haspopup="true"
-                        data-tooltip-href="/skills/14-tooltip"
-                        data-tooltip-json-href="/skills/14/tooltip-json">Perception</a>) check.</p>
-                <p><strong>Tail Swipe.</strong> The aboleth makes one tail attack.</p>
-                <p><strong>Psychic Drain</strong> <strong>(Costs 2 Actions).</strong> One creature <a
-                        class="tooltip-hover condition-tooltip"
-                        href="/compendium/rules/basic-rules/appendix-a-conditions#Charmed" aria-haspopup="true"
-                        data-tooltip-href="/conditions/2-tooltip"
-                        data-tooltip-json-href="/conditions/2/tooltip-json">charmed</a> by the aboleth takes 10 <button
-                        aria-haspopup="menu" class="integrated-dice__container">(3d6)</button> psychic damage, and the
-                    aboleth regains hit points equal to the damage the creature takes.</p>
-            </div>
-        </div>
-    </div>
+name                                                    source, page
+size type
+--------------------------------------------------------------------------------
+ac                  hp                  speed                  cr
+--------------------------------------------------------------------------------
+    str         dex         con         int         wis         cha
+--------------------------------------------------------------------------------
+savings
+immunities  <!-- Solo se muestra si !null  -->
+skills      <!-- Solo se muestra si !null  -->
+senses      <!-- Solo se muestra si !null  -->
+--------------------------------------------------------------------------------
+traits <!-- Extraer rasgos y nombre para montarlo  -->
+--------------------------------------------------------------------------------
+actions <!-- Extraer rasgos y nombre para montarlo  -->
+legendaryActions <!-- Extraer rasgos y nombre para montarlo  -->
+
+
+
+
+<div class="npc-sheet-actions">
+    <div class="npc-sheet-actions-name"><div class="npc-sheet-actions-info"></div></div>
 </div>
+<div class="npc-sheet-legendary-actions">
+    <div class="npc-sheet-legendary-actions-name"><div class="npc-sheet-legendary-actions-info"></div></div>
+</div>
+
+
+
+
+
+<div class="npc-shseet-trait-name">${trait(0)}<div class="npc-sheet-trait-info">${trait(1)}</div></div>

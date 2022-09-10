@@ -24,6 +24,10 @@
     box-sizing: border-box;
     /* Style */
 }
+a {
+    text-decoration: none;
+    color: var(--DARK);
+}
 body {
     /* Dimentions */
     padding: 20px;

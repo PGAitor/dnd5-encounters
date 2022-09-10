@@ -111,6 +111,7 @@
     width: 15%;
     /* Content position */
     text-align: center;
+    text-transform: capitalize;
 }
 .monster-cell-size {
     /* Dimentions */
@@ -167,27 +168,57 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.updown-button {
+.npc-sheet-button {
     /* Dimentions */
+    width: 43px;
+    height: 40px;
     /* Content position */
     padding: 0 16px;
     align-items: center;
     justify-content: center;
     /* Style */
-    background: var(--ACCENT1);
-    border: 1px solid var(--DARK);
-    border-radius: 3px;
+    background-image: url(../img/tied-scroll.svg);
+    background-size: 38px;
+    background-repeat: no-repeat;
     color: var(--DARK)!important;
     cursor: pointer;
     display: inline-flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif!important;
     font-size: 12px;
     font-weight: 700;
-    height: 40px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-
+.npc-sheet-button-change {
+    /* Style */
+    background-image: url(../img/scroll-unfurled.svg);
+}
 .updown-button:hover, .monster-button:hover, .button:hover {
+    /* Style */
     background-color: var(--ACCENT2);
+}
+.load-more-button-container {
+    /* Position */
+    margin-top: 50px;
+    /* Content position */
+    display: flex;
+    justify-content: center;
+    /* Dimensions */
+    width: 100%;
+}
+.load-more-button {
+    /* Dimensions */
+    width: 300px;
+    height: 40px;
+    /* Content position */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Style */
+    cursor: pointer;
+    font-size: large;
+    background-color: var(--INFO);
+    text-align: center;
+    border: 1px solid var(--DARK);
+    border-radius: 2px;
 }
